@@ -6,8 +6,8 @@ import JW2 from "../assets/Ass/JW2.png";
 
 function ComponentD() {
   return (
-    <div>
-      <div className="font-sans flex flex-col md:flex-row justify-center items-center min-h-screen bg-[#fefbec] overflow-x-hidden">
+    <>
+      <div className="font-sans flex flex-col md:flex-row justify-center items-center min-h-screen bg-[#fefbec] overflow-x-hidden pb-10 sm:pb-0">
         <div className="flex flex-col items-start md:ml-16 gap-5 px-6 md:px-14 md:w-1/2">
           <h1 className="text-5xl pt-4 md:text-5xl lg:text-6xl font-bold mb-4 font-serif">
             Our Collections
@@ -60,7 +60,7 @@ function ComponentD() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

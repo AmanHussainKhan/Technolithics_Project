@@ -5,9 +5,9 @@ import F from "../assets/Ass/F.jpeg";
 const ComponentE = () => {
   const [pic, setPic] = useState([]);
   return (
-    <div className="bg-[#fefbec] py-16">
+    <div className="bg-[#fefbec] border-t-2 sm:pb-20">
       <div className="mx-auto max-w-2xl px-4 sm:pt-24 lg:max-w-7xl lg:px-8">
-        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 text-center font-serif">
+        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 text-center font-serif pt-10 sm:pt-0">
           Some Best Words From
           <span className="block">Our Clients</span>
         </h2>

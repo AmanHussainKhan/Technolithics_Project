@@ -8,7 +8,7 @@ function ComponentC() {
     <>
       <div className="font-sans flex justify-center py-20 items-center bg-[#d6d6c2]">
         <div className="flex flex-col lg:flex-row items-center justify-around gap-12 lg:gap-0 px-6 lg:px-20">
-          <div className="flex relative pr-24 lg:pr-3">
+          <div className="flex relative pr-24 lg:pr-3 mr-20 sm:p-0">
             <div class="w-64 h-96 absolute left-[55%] z-0 bottom-[15%] border overflow-hidden rounded-full">
               <img
                 src={JWR}

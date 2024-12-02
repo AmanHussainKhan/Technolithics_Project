@@ -11,13 +11,12 @@ const Home = () => {
   return (
     <>
       <ComponentA />
+      <ComponentD />
       <ComponentB />
       <ComponentC />
-      <ComponentD />
       <ComponentE />
       <ComponentF />
-      <ComponentG /> 
-      
+      <ComponentG />
     </>
   );
 };

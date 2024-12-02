@@ -23,19 +23,19 @@ function ComponentA() {
           </div>
         </div>
         <div className="flex flex-col lg:w-1/3 w-full gap-6 md:items-center justify-center px-20 lg:px-14">
-          <div className="relative w-full lg:w-64 sm:w-80 h-80 sm:h-[500px] mx-4 lg:mx-14 my-10 rounded-[0%_64%_28%_61%/_25%_33%_0%_42%]">
-            <div className="absolute -left-8 -bottom-4 w-80 h-[500px] z-30 overflow-hidden rounded-[0%_64%_28%_61%/_25%_33%_0%_42%]">
+          <div className="relative flex flex-col justify-between w-full lg:w-64 sm:w-80 h-80 sm:h-[500px] mx-4 lg:mx-14 my-10 rounded-[0%_64%_28%_61%/_25%_33%_0%_42%]">
+            <div className="absolute -left-8 z-30 sm:-left-8 sm:-bottom-4 w-80 h-[500px] sm:z-30 overflow-hidden rounded-[0%_64%_28%_61%/_25%_33%_0%_42%]">
               <img
                 src={TM}
                 alt="Egg Content"
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute w-80 h-[500px] border-2 left-1 border-black rounded-[0%_64%_28%_61%/_25%_33%_0%_42%]"></div>
+            <div className="absolute w-80 h-[500px] border-2 sm:left-1 border-black rounded-[0%_64%_28%_61%/_25%_33%_0%_42%]"></div>
           </div>
           <div>
-            <button className="flex w-fit items-center px-4 py-2 border hover:bg- rounded mb-10">
-              <span className="pr-2">
+            <button className="flex w-fit mt-40 ml-10 sm:ml-0 sm:mt-0 items-center px-4 py-2 border hover:text-[#87867d] transition ease-in-out rounded mb-10">
+              <span className="pr-2"> 
                 <EastIcon />
               </span>
               <span className="flex-1 font-semibold text-xl">
