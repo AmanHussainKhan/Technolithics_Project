@@ -5,6 +5,7 @@ import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import { data } from "../../App";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -73,7 +74,7 @@ const Navbar = () => {
           <Link to="/cart" className="relative w-10">
             <ShoppingCart />
             <div className="bg-red-500 w-5 h-5 absolute -top-2 right-1 flex items-center justify-center rounded-full text-white text-sm">
-              0
+              {<data.Consumer>{(productCount) => productCount}</data.Consumer>}
             </div>
           </Link>
         </div>

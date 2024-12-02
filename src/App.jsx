@@ -1,4 +1,4 @@
-import React, { createContext, useContext } from "react";
+import React, { createContext, useContext, useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Pages/Home";
@@ -11,6 +11,8 @@ import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import TermsOfServices from "./Pages/TermsOfServices";
 import JweleryItem from "./Pages/JweleryItem";
 import ProductPage from "./Pages/ProductPage";
+
+const data = createContext();
 
 const router = createBrowserRouter([
   {
@@ -90,11 +92,15 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
+  const [productCount, setProductCount] = useState(11);
   return (
     <>
-      <RouterProvider router={router} />
+      <data.Provider value={productCount}>
+        <RouterProvider router={router} />
+      </data.Provider>
     </>
   );
 };
 
 export default App;
+export { data };
