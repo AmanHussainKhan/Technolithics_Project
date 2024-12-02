@@ -3,6 +3,7 @@ import EastIcon from "@mui/icons-material/East";
 import TL from "../assets/Ass/TL.png";
 import TM from "../assets/Ass/TM.png";
 import TR from "../assets/Ass/TR.png";
+import { Link } from "react-router-dom";
 
 function ComponentA() {
   return (
@@ -34,14 +35,16 @@ function ComponentA() {
             <div className="absolute w-80 h-[500px] border-2 sm:left-1 border-black rounded-[0%_64%_28%_61%/_25%_33%_0%_42%]"></div>
           </div>
           <div>
-            <button className="flex w-fit mt-40 ml-10 sm:ml-0 sm:mt-0 items-center px-4 py-2 border hover:text-[#87867d] transition ease-in-out rounded mb-10">
-              <span className="pr-2"> 
-                <EastIcon />
-              </span>
-              <span className="flex-1 font-semibold text-xl">
-                Explore Collection
-              </span>
-            </button>
+            <Link to="/productpage">
+              <button className="flex w-fit mt-40 ml-10 sm:ml-0 sm:mt-0 items-center px-4 py-2 border hover:text-[#87867d] transition ease-in-out rounded mb-10">
+                <span className="pr-2">
+                  <EastIcon />
+                </span>
+                <span className="flex-1 font-semibold text-xl">
+                  Explore Collection
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
         <div className="flex flex-col lg:w-1/3 w-full gap-6 px-4 lg:px-14">

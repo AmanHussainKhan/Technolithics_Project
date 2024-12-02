@@ -13,7 +13,6 @@ const ComponentE = () => {
         </h2>
         <div className="font-sans flex flex-col lg:flex-row justify-center items-center lg:gap-8 gap-6 mt-10">
           <div className="relative">
-            {/* Main Circle */}
             <div className="relative z-10 w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden bg-lightblue border border-black mx-auto">
               <img
                 src={F}
@@ -21,11 +20,8 @@ const ComponentE = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-
-            {/* Circle Below */}
             <div className="absolute z-0 w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full border border-black top-[3%] left-[6%]"></div>
           </div>
-
           <div className="w-full lg:w-1/2 px-4">
             <TestimonialCarousal pic={pic} setPic={setPic} />
           </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import EastIcon from "@mui/icons-material/East";
-import JWR from "../assets/Ass/JWR.png";
 import M from "../assets/Ass/M.png";
+import { Link } from "react-router-dom";
 
 function ComponentF() {
   return (
@@ -20,15 +20,17 @@ function ComponentF() {
                 with our expert artisans to design a piece that reflects your
                 personal style and story.
               </p>
-              <div className="flex justify-center items-center mb-5 sm:mb-0">
-                <button className="flex w-fit items-center px-4 py-2 rounded mb-10 border hover:bg-[#fefbec] transition-colors duration-300 ease-in-out ">
-                  <span className="pr-2">
-                    <EastIcon />
-                  </span>
-                  <span className="flex-1 font-semibold text-xl">
-                    Explore Collections Here
-                  </span>
-                </button>
+              <div className="flex justify-center items-center sm:justify-normal sm:items-start mb-5 sm:mb-0">
+                <Link to="/productpage">
+                  <button className="flex w-fit items-center px-4 py-2 rounded mb-10 border hover:bg-[#fefbec] transition-colors duration-300 ease-in-out ">
+                    <span className="pr-2">
+                      <EastIcon />
+                    </span>
+                    <span className="flex-1 font-semibold text-xl">
+                      Explore Collections Here
+                    </span>
+                  </button>
+                </Link>
               </div>
             </div>
             <div className="flex relative justify-center items-center lg:w-1/3">

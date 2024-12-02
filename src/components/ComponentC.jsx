@@ -2,6 +2,7 @@ import React from "react";
 import EastIcon from "@mui/icons-material/East";
 import JWL from "../assets/Ass/JWL.png";
 import JWR from "../assets/Ass/JWR.png";
+import { Link } from "react-router-dom";
 
 function ComponentC() {
   return (
@@ -38,14 +39,16 @@ function ComponentC() {
               Each piece is crafted with precision and care to ensure it’s as
               unique as the person wearing it.
             </p>
-            <button className="flex items-center self-center lg:self-start px-4 py-2 rounded border hover:bg-[#fefbec] transition-colors duration-300 ease-in-out ">
-              <span className="pr-2">
-                <EastIcon />
-              </span>
-              <span className="flex-1 font-semibold text-lg sm:text-xl">
-                Explore Collection
-              </span>
-            </button>
+            <Link to="/productpage">
+              <button className="flex items-center self-center lg:self-start px-4 py-2 rounded border hover:bg-[#fefbec] transition-colors duration-300 ease-in-out ">
+                <span className="pr-2">
+                  <EastIcon />
+                </span>
+                <span className="flex-1 font-semibold text-lg sm:text-xl">
+                  Explore Collection
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { ShoppingCart } from "lucide-react";
 import { Link } from "react-router-dom";
 import IconButton from "@mui/material/IconButton";
@@ -16,13 +16,10 @@ const Navbar = () => {
   return (
     <div className="bg-[#fefbec] px-4 w-full z-50 top-0 shadow-md">
       <div className="max-w-7xl mx-auto py-4 border-b-2 border-[#c9c9c9] px-5 flex justify-between items-center">
-        {/* Logo Section */}
         <Link to="/" className="flex items-center">
           <h1 className="font-semibold text-xl">UiXSHUVO</h1>
           <div className="w-[2px] h-8 bg-[#c9c9c9] transform ml-2 rotate-12"></div>
         </Link>
-
-        {/* Hamburger Menu for Mobile */}
         <div className="md:hidden">
           <IconButton
             aria-label="menu"
@@ -35,8 +32,6 @@ const Navbar = () => {
             )}
           </IconButton>
         </div>
-
-        {/* Navigation Menu */}
         <nav
           className={`${
             isMenuOpen ? "block" : "hidden"
@@ -65,10 +60,8 @@ const Navbar = () => {
             </li>
           </ul>
         </nav>
-
-        {/* Right Section */}
         <div className="hidden md:flex items-center gap-5">
-          <Link to="/login">
+          <Link to="/">
             <div className="flex items-center">
               <div className="w-[2px] h-8 bg-[#c9c9c9] transform ml-2 rotate-12"></div>
               <IconButton aria-label="delete" onClick={handleDelete}>
@@ -85,11 +78,9 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-
-      {/* Mobile Right Section */}
       {isMenuOpen && (
         <div className="flex flex-col items-center mt-4 gap-4 md:hidden">
-          <Link to="/login" onClick={() => setIsMenuOpen(false)}>
+          <Link to="/" onClick={() => setIsMenuOpen(false)}>
             <div className="flex items-center">
               <div className="w-[2px] h-8 bg-[#c9c9c9] transform ml-2 rotate-12"></div>
               <IconButton aria-label="delete" onClick={handleDelete}>

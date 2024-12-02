@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createContext, useContext } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Pages/Home";
@@ -10,6 +10,7 @@ import Twitter from "./Pages/Twitter";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import TermsOfServices from "./Pages/TermsOfServices";
 import JweleryItem from "./Pages/JweleryItem";
+import ProductPage from "./Pages/ProductPage";
 
 const router = createBrowserRouter([
   {
@@ -75,6 +76,14 @@ const router = createBrowserRouter([
     element: (
       <>
         <JweleryItem />
+      </>
+    ),
+  },
+  {
+    path: "/productpage",
+    element: (
+      <>
+        <ProductPage />
       </>
     ),
   },

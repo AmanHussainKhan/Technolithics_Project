@@ -34,14 +34,16 @@ function ComponentD() {
               </Link>
             </ul>
           </div>
-          <button className="flex w-fit items-center px-4 py-2 rounded mb-10 border hover:bg-[#d6d6c2] transition-colors duration-300 ease-in-out ">
-            <span className="pr-2">
-              <EastIcon />
-            </span>
-            <span className="flex-1 font-semibold text-xl">
-              Explore Collection
-            </span>
-          </button>
+          <Link to="/productpage">
+            <button className="flex w-fit items-center px-4 py-2 rounded mb-10 border hover:bg-[#d6d6c2] transition-colors duration-300 ease-in-out ">
+              <span className="pr-2">
+                <EastIcon />
+              </span>
+              <span className="flex-1 font-semibold text-xl">
+                Explore Collection
+              </span>
+            </button>
+          </Link>
         </div>
         <div className="flex flex-wrap justify-center md:justify-start gap-6 md:gap-14 mx-6 md:mx-14 md:my-10 md:w-1/2">
           <div className="w-64 h-96 border overflow-hidden border-black rounded-[50%_0%_45%_0%/_34%_25%_40%_25%]">

@@ -1,10 +1,7 @@
 import React from "react";
-import TrendingFlatIcon from "@mui/icons-material/TrendingFlat";
 import EastIcon from "@mui/icons-material/East";
-
-import Button from "@mui/material/Button";
-import Gpic from "../assets/Ass/G.jpg";
 import Last from "../assets/Ass/Last.png";
+import { Link } from "react-router-dom";
 
 const ComponentG = () => {
   return (
@@ -23,17 +20,18 @@ const ComponentG = () => {
             our expert artisans to design a piece that reflects your personal
             style and story.
           </p>
-          <button className="flex w-fit items-center px-4 py-2 rounded mb-10 border hover:bg-[#fefbec] transition-colors duration-300 ease-in-out">
-            <span className="pr-2">
-              <EastIcon />
-            </span>
-            <span className="flex-1 font-semibold text-xl">
-              Explore Collection
-            </span>
-          </button>
+          <Link to="/productpage">
+            <button className="flex w-fit items-center px-4 py-2 rounded mb-10 border hover:bg-[#fefbec] transition-colors duration-300 ease-in-out">
+              <span className="pr-2">
+                <EastIcon />
+              </span>
+              <span className="flex-1 font-semibold text-xl">
+                Explore Collection
+              </span>
+            </button>
+          </Link>
         </div>
         <div className="relative mt-10 sm:mt-10">
-          {/* Image container */}
           <div className="relative z-20 w-40 h-56 sm:w-48 sm:h-64 md:w-56 md:h-72 lg:w-72 lg:h-96 rounded-[50%_46%_49%_48%/_43%_48%_52%_57%] overflow-hidden bg-lightblue border border-black mx-auto">
             <img
               src={Last}
@@ -41,13 +39,10 @@ const ComponentG = () => {
               className="w-full h-full object-cover"
             />
           </div>
-
-          {/* Yellow background div */}
           <div className="absolute z-10 top-2 left-[10%] bg-black w-40 h-56 sm:w-48 sm:h-64 md:w-56 md:h-72 lg:w-72 lg:h-96 rounded-[50%_46%_49%_48%/_43%_48%_52%_57%] overflow-hidden border border-black mx-auto"></div>
         </div>
       </div>
     </div>
   );
 };
-
 export default ComponentG;
